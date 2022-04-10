@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ricardo Sun/Desktop/ECS198F_P1_FoodTruck/app/src/main/res/layout/activity_main.xml" value="0.39947916666666666" />
+        <entry key="..\:/Users/Ricardo Sun/Desktop/ECS198F_P1_FoodTruck/app/src/main/res/layout/food_truck_item.xml" value="0.39947916666666666" />
         <entry key="app/src/main/res/layout/activity_food_truck_detail.xml" value="0.35507246376811596" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35507246376811596" />
         <entry key="app/src/main/res/layout/food_truck_item.xml" value="0.35507246376811596" />
