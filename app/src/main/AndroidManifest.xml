@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodTruck">
         <activity
+            android:name=".FoodTruckDetail"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
