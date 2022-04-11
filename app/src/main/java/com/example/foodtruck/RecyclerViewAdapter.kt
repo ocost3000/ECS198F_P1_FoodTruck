@@ -1,11 +1,11 @@
 package com.example.foodtruck
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodtruck.Model.FoodTruck
 
@@ -35,6 +35,12 @@ class RecyclerViewAdapter(private val foodTrucks: List<FoodTruck>)
             truckImage.setImageResource(truck.img)
             truckLocation.text = truck.location
             truckTime.text = truck.time
+        }
+
+        holder.itemView.setOnClickListener{
+            val intent = Intent(it.context, FoodTruckDetail::class.java)
+            intent.putExtra("FoodTruck", truck)
+            it.context.startActivity(intent)
         }
     }
 

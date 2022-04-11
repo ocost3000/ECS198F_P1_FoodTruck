@@ -6,4 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".FoodTruckDetail">
 
+    <ImageView
+        android:id="@+id/truckImage2"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="truckImage"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/street_tacos" />
+
+    <TextView
+        android:id="@+id/truckName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/truckImage2" />
+
+    <ImageView
+        android:id="@+id/locationImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="locationIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/truckName2"
+        app:srcCompat="@drawable/ic_round_location_on_24" />
+
+    <TextView
+        android:id="@+id/truckLocation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Location"
+        app:layout_constraintBottom_toBottomOf="@+id/locationImageView"
+        app:layout_constraintStart_toEndOf="@+id/locationImageView"
+        app:layout_constraintTop_toTopOf="@+id/locationImageView" />
+
+    <ImageView
+        android:id="@+id/timeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="timeIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationImageView"
+        app:srcCompat="@drawable/ic_round_access_time_24" />
+
+    <TextView
+        android:id="@+id/truckTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Time"
+        app:layout_constraintBottom_toBottomOf="@+id/timeImageView"
+        app:layout_constraintStart_toEndOf="@+id/timeImageView"
+        app:layout_constraintTop_toTopOf="@+id/timeImageView" />
+
+    <TextView
+        android:id="@+id/truckLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Visit Website"
+        android:textColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="@+id/timeImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/locationImageView" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeImageView" />
+
+    <TextView
+        android:id="@+id/truckDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical"
+        android:text="description"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@ import com.example.foodtruck.Model.FoodTruck
 
 class MainActivity : AppCompatActivity() {
 
-    val FoodTrucks = listOf<FoodTruck>(
+    private val FoodTrucks = listOf<FoodTruck>(
         FoodTruck(
             0,
             "Authentic Street Taco",
@@ -71,10 +71,9 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = RecyclerViewAdapter(FoodTrucks)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(this)
-
+        findViewById<RecyclerView>(R.id.recyclerView).apply {
+            this.adapter = adapter
+            layoutManager = LinearLayoutManager(context)
+        }
     }
 }
